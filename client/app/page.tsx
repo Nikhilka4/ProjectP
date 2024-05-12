@@ -1,16 +1,13 @@
 import Hero from "@/pages/components/Hero";
 import NavBar from "@/pages/components/NavBar";
-
+import Features from "@/pages/components/Features";
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <NavBar />
-      </div>
-      <div>
+      <NavBar />
       <Hero />
-      </div>
+      <Features />
     </div>
   );
 }

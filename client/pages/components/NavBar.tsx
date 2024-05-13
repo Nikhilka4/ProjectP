@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../public/LOGO.svg";
+import logo from "../assets/LOGO.svg";
 import { Button } from "@/components/ui/button";
 
 type Props = {};

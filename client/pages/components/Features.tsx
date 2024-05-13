@@ -1,24 +1,8 @@
+import Image from "next/image";
 import React from "react";
+import FeatureCards from "./FeatureCards";
 
 type Props = {};
-
-const featureCards = [
-  {
-    imgLogo: '../../public/LOGO.svg' ,
-    title: "Low cost",
-    description: "Utilize resources, and leveragetechnology to the maximum. They areeasy to set up, expand & modify."
-  },
-  {
-    imgLogo: '../../public/LOGO.svg' ,
-    title: "Low cost",
-    description: "Utilize resources, and leveragetechnology to the maximum. They areeasy to set up, expand & modify."
-  },
-  {
-    imgLogo: '../../public/LOGO.svg' ,
-    title: "Low cost",
-    description: "Utilize resources, and leveragetechnology to the maximum. They areeasy to set up, expand & modify."
-  },
-]
 
 
 const Features = (props: Props) => {
@@ -47,20 +31,8 @@ const Features = (props: Props) => {
           <p className="text-[#000000] text-[30px] font-semibold"><span className="text-[#fb503f]">More than</span><span className="font-bold"> &#8220;just Steel Structures&#8221;</span></p>
           <p className="text-[#73767f] text-[18px] font-semibold">We deliver complete building solutions with</p>
         </div>
-        <div>
-          <div className="grid grid-cols-3 gap-4 mx-[70px] my-10">
-            {featureCards.map((card, index) => (
-              <div className="flex flex-col justify-center items-center" key={index}>
-                <div className="flex justify-center items-center">
-                  <img src={card.imgLogo} width={100} height={100} alt="logo" />
-                </div>
-                <p className="text-[#000000] text-[20px] font-semibold my-5">{card.title}</p>
-                <p className="text-[#73767f] text-[18px] font-semibold">{card.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
+      <FeatureCards />
     </div>
   );
 };

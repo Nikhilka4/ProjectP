@@ -6,3 +6,7 @@
 .roboto {
   font-family: var(--font-roboto);
 }
+
+body{
+  background-color: #fff5ea;
+}

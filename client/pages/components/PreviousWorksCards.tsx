@@ -24,23 +24,23 @@ const PreviousWorksCardsData = [
   },
   {
     imgLogo: imageBG,
-    ProjectName: "Paramjyoti School Roofing",
-    place: "Amalapuram, Andhra Pradesh.",
-    area: "30,000 sq.ft",
+    ProjectName: "Warehouse for VsB agro tech",
+    place: "Samarlakota, Andhra Pradesh.",
+    area: "22,000 sq.ft",
     timeTaken: "6 Weeks",
   },
   {
     imgLogo: imageBG,
-    ProjectName: "Paramjyoti School Roofing",
-    place: "Amalapuram, Andhra Pradesh.",
-    area: "30,000 sq.ft",
-    timeTaken: "6 Weeks",
+    ProjectName: "Warehouse ",
+    place: " Kodangal, Telangana.",
+    area: "17,000 sq.ft",
+    timeTaken: "8 Weeks",
   },
   {
     imgLogo: imageBG,
-    ProjectName: "Paramjyoti School Roofing",
-    place: "Amalapuram, Andhra Pradesh.",
-    area: "30,000 sq.ft",
+    ProjectName: "Warehouse ",
+    place: "Gulbarga, Karnataka.",
+    area: "16,000 sq.ft",
     timeTaken: "6 Weeks",
   },
   {
@@ -63,7 +63,7 @@ const PreviousWorksCards = (props: Props) => {
           {PreviousWorksCardsData.map((data, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-9/12">
               <div className="p-1">
-                <Card className="h-[68vh]">
+                <Card className="h-[68vh] bg-[#dff4ff]">
                   <CardContent className="flex aspect-video items-center justify-center">
                     <div className="basis-1/3">
                       <p className="text-[35px] font-bold">

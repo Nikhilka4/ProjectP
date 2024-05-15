@@ -57,7 +57,7 @@ const PreviousWorksCards = (props: Props) => {
     <div>
       <Carousel
         plugins={[Autoplay({ delay: 2000 })]}
-        className="max-w-[calc(100vw-140px)] mx-[70px]"
+        className="max-w-[calc(100vw-140px)] mx-[70px] mt-10"
       >
         <CarouselContent>
           {PreviousWorksCardsData.map((data, index) => (

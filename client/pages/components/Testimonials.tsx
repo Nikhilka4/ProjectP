@@ -1,12 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import TestimonialCards from "./TestimonialCards";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-const Testimonials = (props: Props) => {
+const Testimonials:FC<Props> = ({className} )=> {
   return (
     <div>
-      <div className="h-[calc(100vh_-_107px)] mt-16 mx-[70px]">
+      <div className={`h-[calc(100vh_-_107px)] mt-16 mx-[70px] ${className}`}>
         <div className="flex flex-col justify-center items-center">
           <p className="text-[30px] font-bold">What people say about us</p>
           <p className="max-w-[700px] text-center text-[18px] text-[#999697]">

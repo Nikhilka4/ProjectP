@@ -1,13 +1,15 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import Imag from "../assets/IMG.svg";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-const Steps = (props: Props) => {
+const Steps:FC<Props> = ({className} ) => {
   return (
     <div>
-      <div className="h-[calc(100vh_-_107px)] mt-16 mx-[70px]">
+      <div className={`h-[calc(100vh_-_107px)] mt-16 mx-[70px] ${className}`}>
         <div className="flex flex-col justify-center items-center">
           <p className="text-[30px] font-bold">How we work?</p>
           <p className="max-w-[700px] text-center text-[18px] text-[#999697]">
@@ -45,7 +47,7 @@ const Steps = (props: Props) => {
                 <div className="bg-[#473bf0] text-white w-10 h-10 text-center rounded-full pt-2">
                     <span>3</span>
                 </div>
-                <p className="text-[25px] font-bold">Book an appointment</p>
+                <p className="text-[25px] font-bold">Building Ready</p>
               </div>
               <p className="w-[500px] text-[20px] pl-[55px] text-[#999697]">
                 We use advanced techniques to deliver our services on time.

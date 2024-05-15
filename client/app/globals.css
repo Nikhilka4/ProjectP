@@ -8,5 +8,14 @@
 }
 
 body{
+  box-sizing: border-box;
   background-color: #fff5ea;
 }
+
+
+/* .snap-scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-padding-top: 110px; 
+} */
